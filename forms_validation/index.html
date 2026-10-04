@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ВелоКруг — регистрация</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>ВелоКруг</h1>
+        <p>Открой город с нового ракурса</p>
+        <nav aria-label="Основная навигация">
+          <ul>
+            <li><a href="#registrationForm">Регистрация</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Регистрация участника</h2>
+      <form id="registrationForm" novalidate>
+        <fieldset>
+          <legend>Личная информация</legend>
+          <label for="firstName">Имя *</label><input id="firstName" name="firstName" type="text" required minlength="2" maxlength="50" autocomplete="given-name" aria-describedby="firstNameError"><span id="firstNameError" class="error-message" aria-live="polite"></span><label for="lastName">Фамилия *</label><input id="lastName" name="lastName" type="text" required minlength="2" maxlength="50" autocomplete="family-name" aria-describedby="lastNameError"><span id="lastNameError" class="error-message" aria-live="polite"></span><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email" aria-describedby="emailError"><span id="emailError" class="error-message" aria-live="polite"></span><label for="phone">Телефон (необязательно)</label><input id="phone" name="phone" type="tel" placeholder="+7 (999) 123-45-67" autocomplete="tel" aria-describedby="phoneError"><span id="phoneError" class="error-message" aria-live="polite"></span>
+        </fieldset>
+        <fieldset>
+          <legend>Безопасность</legend>
+          <label for="password">Пароль *</label><input id="password" name="password" type="password" required minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" autocomplete="new-password" aria-describedby="passwordError"><span id="passwordError" class="error-message" aria-live="polite"></span>
+          <p>Не менее 8 символов: латинские буквы в двух регистрах и цифра.</p>
+          <label for="confirmPassword">Повторите пароль *</label><input id="confirmPassword" name="confirmPassword" type="password" required autocomplete="new-password" aria-describedby="confirmPasswordError"><span id="confirmPasswordError" class="error-message" aria-live="polite"></span>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительная информация</legend>
+          <label for="birthDate">Дата рождения</label><input id="birthDate" name="birthDate" type="date" min="1900-01-01" aria-describedby="birthDateError"><span id="birthDateError" class="error-message" aria-live="polite"></span><label for="country">Страна</label><select id="country" name="country">
+            <option value="">Выберите страну</option>
+            <option value="ru">Россия</option>
+            <option value="kz">Казахстан</option>
+            <option value="by">Беларусь</option>
+            <option value="other">Другая</option>
+          </select>
+          <fieldset>
+            <legend>Пол</legend>
+            <label><input type="radio" name="gender" value="male"> Мужской</label><label><input type="radio" name="gender" value="female">
+              Женский</label><label><input type="radio" name="gender" value="unspecified"> Не
+              указывать</label>
+          </fieldset>
+          <fieldset>
+            <legend>Интересы</legend>
+            <label><input type="checkbox" name="interests[]" value="city"> Городские
+              маршруты</label><label><input type="checkbox" name="interests[]" value="photo">
+              Фотография</label><label><input type="checkbox" name="interests[]" value="touring">
+              Велопоходы</label>
+          </fieldset>
+          <label for="bio">О себе</label><textarea id="bio" name="bio" maxlength="500" rows="4"></textarea>
+          <p><span id="charCount">0</span>/500 символов</p>
+        </fieldset>
+        <label><input type="checkbox" id="terms" name="terms" required aria-describedby="termsError">
+          Я ознакомился с условиями учебной формы *</label><span id="termsError" class="error-message" aria-live="polite"></span><label><input type="checkbox" name="newsletter"> Получать новости
+          клуба</label>
+        <p>Учебная форма: сведения не отправляются и не сохраняются.</p>
+        <div class="toolbar">
+          <button type="submit">Проверить регистрацию</button><button type="reset">Очистить</button>
+        </div>
+        <div id="result" role="status"></div>
+      </form>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <p>ВелоКруг · Учебный проект МДК 07</p>
+        <address>
+          <a href="mailto:club@example.com">club@example.com</a>
+        </address>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
