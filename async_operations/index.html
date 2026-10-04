@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ПР13 — асинхронность</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Асинхронные операции</h1>
+        <p>Учебный API JSONPlaceholder моделирует запись данных.</p>
+      </div>
+    </header>
+    <main class="container">
+      <section class="task-area">
+        <h2>1. Промисы</h2>
+        <div class="toolbar">
+          <button type="button" id="basic-promise">Успех</button><button type="button" id="promise-chain">Цепочка</button><button type="button" id="promise-error">Ошибка</button>
+        </div>
+        <pre id="promise-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>2. Async/await</h2>
+        <div class="toolbar">
+          <button type="button" id="basic-async">Async/await</button><button type="button" id="async-error">Ошибка async</button><button type="button" id="async-parallel">
+            Параллельные операции
+          </button>
+        </div>
+        <pre id="async-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>3. API</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-users">Пользователи</button><button type="button" id="fetch-post">Создать пост</button><button type="button" id="fetch-error">Ошибка API</button>
+        </div>
+        <pre id="api-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>4. Таймеры</h2>
+        <div class="toolbar">
+          <button type="button" id="start-interval">Старт интервала</button><button type="button" id="stop-interval">Стоп и сброс</button><button type="button" id="delay-promise">Задержки</button>
+        </div>
+        <pre id="interval-output" class="output" role="status">
+Ожидание действия</pre>
+        <pre id="timer-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>5. Ошибки</h2>
+        <div class="toolbar">
+          <button type="button" id="try-catch">Try/catch</button><button type="button" id="multiple-errors">Статистика ошибок</button><button type="button" id="retry-pattern">Повторы</button>
+        </div>
+        <pre id="error-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>6. Параллельное выполнение</h2>
+        <div class="toolbar">
+          <button type="button" id="promise-all">Promise.all</button><button type="button" id="promise-race">Promise.race</button><button type="button" id="promise-allSettled">
+            Promise.allSettled
+          </button>
+        </div>
+        <pre id="parallel-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>7. Сценарии</h2>
+        <div class="toolbar">
+          <button type="button" id="sequential-requests">
+            Цепочка запросов</button><button type="button" id="upload-simulation">
+            Симуляция загрузки</button><button type="button" id="cache-requests">Кэш</button>
+        </div>
+        <pre id="scenario-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <div id="api-data" class="data-container"></div>
+      <progress id="upload-progress" value="0" max="100" aria-label="Прогресс симуляции" aria-valuenow="0"></progress><button id="run-tests" type="button">Запустить тесты</button>
+      <div id="testResults" role="status"></div>
+    </main>
+    <script src="async-tasks.js" defer></script>
+    <script src="async-tests.js" defer></script>
+  </body>
+</html>
