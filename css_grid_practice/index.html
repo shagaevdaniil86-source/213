@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ВелоКруг — CSS Grid</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      <header>
+        <div class="container">
+          <h1>ВелоКруг</h1>
+          <p>Открой город с нового ракурса</p>
+          <nav aria-label="Основная навигация">
+            <ul>
+              <li><a href="#gallery">Маршруты</a></li>
+              <li><a href="#contact">Расписание</a></li>
+              <li><a href="#about">О клубе</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <nav class="navigation" aria-label="Галерея и клуб">
+        <h2>Маршруты</h2>
+        <ul>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#about">Клуб</a></li>
+        </ul>
+      </nav>
+      <main class="main-content">
+        <article class="featured">
+          <h2>Город в шести маршрутах</h2>
+          <p>Один велосипед — много новых впечатлений.</p>
+        </article>
+        <section id="gallery">
+          <h2>Галерея</h2>
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img src="images/bike.svg" alt="Иллюстрация маршрута 1" width="800" height="400">
+              <figcaption>Маршрут 1: городской круг</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/bike.svg" alt="Иллюстрация маршрута 2" width="800" height="400">
+              <figcaption>Маршрут 2: городской круг</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/bike.svg" alt="Иллюстрация маршрута 3" width="800" height="400">
+              <figcaption>Маршрут 3: городской круг</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/bike.svg" alt="Иллюстрация маршрута 4" width="800" height="400">
+              <figcaption>Маршрут 4: городской круг</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/bike.svg" alt="Иллюстрация маршрута 5" width="800" height="400">
+              <figcaption>Маршрут 5: городской круг</figcaption>
+            </figure>
+            <figure class="gallery-item">
+              <img src="images/bike.svg" alt="Иллюстрация маршрута 6" width="800" height="400">
+              <figcaption>Маршрут 6: городской круг</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section id="about">
+          <h2>О клубе</h2>
+          <p>
+            Мы исследуем город на велосипеде, выбираем спокойные маршруты и
+            помогаем новичкам подготовиться к первой поездке.
+          </p>
+        </section>
+      </main>
+      <aside class="sidebar">
+        <h2>Дистанции</h2>
+        <p>От 9 до 18 километров.</p>
+      </aside>
+      <footer id="contact">
+        <div>Контакты</div>
+        <div>ВелоКруг</div>
+        <div>По выходным</div>
+        <div><a href="mailto:club@example.com">Написать</a></div>
+      </footer>
+    </div>
+  </body>
+</html>
