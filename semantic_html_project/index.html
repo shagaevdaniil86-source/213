@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ВелоКруг — маршруты и встречи</title>
+  <style>
+      body { max-width: 900px; margin: auto; padding: 16px; font: 16px/1.6 system-ui, sans-serif; }
+      img { max-width: 100%; height: auto; }
+      table { width: 100%; table-layout: fixed; }
+      th, td { overflow-wrap: anywhere; }
+      input { max-width: 100%; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>ВелоКруг</h1>
+        <p>Открой город с нового ракурса</p>
+        <nav aria-label="Основная навигация">
+          <ul>
+            <li><a href="#routes">Маршруты</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#about">О клубе</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section id="routes">
+        <h2>Истории маршрутов</h2>
+        <article itemscope itemtype="https://schema.org/Article">
+          <header>
+            <h3 itemprop="headline">Утро на набережной</h3>
+            <time datetime="2026-10-03" itemprop="datePublished">3 октября 2026</time>
+          </header>
+          <section>
+            <h4>Первые километры</h4>
+            <p itemprop="articleBody">
+              У воды город кажется тише. Мы начинаем с короткого участка, чтобы
+              проверить посадку и темп группы.
+            </p>
+            <figure>
+              <img src="images/bike.svg" width="800" height="400" alt="Велосипед на дорожке среди зелёных холмов">
+              <figcaption>Спокойный маршрут для знакомства с клубом</figcaption>
+            </figure>
+          </section>
+          <section>
+            <h4>Остановка у моста</h4>
+            <p>
+              Делаем паузу, фотографируем отражения и возвращаемся по парковой
+              дорожке.
+            </p>
+          </section>
+          <footer>
+            <p>Автор: редакция ВелоКруга</p>
+            <address>
+              <a href="mailto:club@example.com">Связаться с автором</a>
+            </address>
+          </footer>
+        </article>
+        <article>
+          <h3>Зелёное кольцо</h3>
+          <p>Маршрут соединяет три небольших парка.</p>
+          <details>
+            <summary>Что взять с собой</summary>
+            <p>Воду, шлем и запасную камеру.</p>
+          </details>
+        </article>
+        <article>
+          <h3>Архитектура старого города</h3>
+          <p>Короткая прогулка с остановками у интересных зданий.</p>
+        </article>
+      </section>
+      <section id="about">
+        <h2>О клубе</h2>
+        <p>
+          Мы исследуем город на велосипеде, выбираем спокойные маршруты и
+          помогаем новичкам подготовиться к первой поездке.
+        </p>
+      </section>
+      <section id="schedule">
+        <h2>Расписание встреч</h2>
+        <table>
+          <caption>
+            Учебное расписание прогулок
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">День</th>
+              <th scope="col">Время</th>
+              <th scope="col">Маршрут</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Суббота</th>
+              <td>10:00</td>
+              <td>Набережная</td>
+            </tr>
+            <tr>
+              <th scope="row">Воскресенье</th>
+              <td>11:30</td>
+              <td>Зелёное кольцо</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h2>Подписка на новости</h2>
+        <form id="subscribe">
+          <label for="subscribe-email">Email</label><input id="subscribe-email" name="email" type="email" required><button type="submit">Подписаться</button>
+          <p id="subscribe-result" role="status"></p>
+        </form>
+      </section>
+      <aside>
+        <h2>Совет новичку</h2>
+        <p>Проверьте тормоза и давление в шинах до старта.</p>
+      </aside>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <p>ВелоКруг · Учебный проект МДК 07</p>
+        <address>
+          <a href="mailto:club@example.com">club@example.com</a>
+        </address>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
