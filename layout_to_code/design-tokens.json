@@ -1,0 +1,19 @@
+{
+  "canvas": [1440, 1164],
+  "container": 1120,
+  "header": 80,
+  "hero": 520,
+  "cardGap": 24,
+  "sectionPadding": 48,
+  "buttonPadding": [14, 24],
+  "colors": {
+    "ink": "#173f38",
+    "accent": "#b65a18",
+    "paper": "#f5f3eb"
+  },
+  "font": "Arial",
+  "h1": [48, 1.1],
+  "h2": 32,
+  "body": [16, 1.65],
+  "h3": 24
+}

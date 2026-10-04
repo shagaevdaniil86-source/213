@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1164" viewBox="0 0 1440 1164">
+  <rect width="1440" height="1164" fill="#f5f3eb"/>
+  <rect width="1440" height="80" fill="#173f38"/>
+  <g font-family="Arial,sans-serif">
+    <text x="160" y="48" fill="white" font-size="24" font-weight="bold">
+      ВелоКруг
+    </text>
+    <text x="830" y="46" fill="white" font-size="16">
+      Преимущества О клубе Контакты
+    </text>
+    <g fill="#173f38">
+      <text x="160" y="185" font-size="12" letter-spacing="2">
+        ГОРОДСКИЕ ВЕЛОПРОГУЛКИ
+      </text>
+      <text x="160" y="275" font-size="48" font-weight="bold">Твой город.</text>
+      <text x="160" y="310" font-size="48" font-weight="bold">
+        Твой новый маршрут.
+      </text>
+      <text x="160" y="360" font-size="16">
+        Короткие поездки, новые знакомства
+      </text>
+      <text x="160" y="402" font-size="16">воздухе.</text>
+    </g>
+    <rect x="160" y="426" width="181.36" height="54.4" rx="6" fill="#b65a18"/>
+    <text x="184" y="460" fill="white" font-size="16">Выбрать прогулку</text>
+    <g fill="#173f38">
+      <text x="160" y="665" font-size="32" font-weight="bold">
+        Почему с нами удобно
+      </text>
+    </g>
+    <g fill="white" stroke="#d3dbd3">
+      <rect x="160" y="702.4" width="357" height="163.7" rx="10"/>
+      <rect x="541" y="702.4" width="357" height="163.7" rx="10"/>
+      <rect x="922" y="702.4" width="358" height="163.7" rx="10"/>
+    </g>
+    <g fill="#173f38" font-size="24" font-weight="bold">
+      <text x="184" y="745">Без спешки</text>
+      <text x="565" y="745">Понятный маршрут</text>
+      <text x="946" y="745">Живое общение</text>
+    </g>
+    <g fill="#173f38" font-size="16">
+      <text x="184" y="788">Выбираем темп, подходящий</text>
+      <text x="184" y="814">всей группе.</text>
+      <text x="565" y="788">Заранее обсуждаем дистанцию</text>
+      <text x="565" y="814">и точки встречи.</text>
+      <text x="946" y="788">После поездки делимся</text>
+      <text x="946" y="814">впечатлениями за чаем.</text>
+    </g>
+    <rect y="1031" width="1440" height="133" fill="#173f38"/>
+    <text x="160" y="1022" font-size="16" fill="white">
+      ВелоКруг · club@example.com
+    </text>
+    <text x="160" y="1050" font-size="16" fill="white">
+      Написать клубу · ВКонтакте
+    </text>
+  </g>
+<svg width="536" height="268" viewBox="0 0 800 400" x="744" y="206">
+  <rect width="800" height="400" fill="#d9e7da"/>
+  <path d="M0 280 Q180 100 400 230 T800 140 V400 H0Z" fill="#91b6a0"/>
+  <path d="M0 360 Q350 220 800 300" stroke="#f5f3eb" stroke-width="45" fill="none"/>
+  <g fill="none" stroke="#173f38" stroke-width="9">
+    <circle cx="290" cy="280" r="62"/>
+    <circle cx="500" cy="280" r="62"/>
+    <path d="M290 280 L355 180 L410 280Z M355 180H463L410 280 M500 280L452 146H492 M334 174H377"/>
+  </g>
+  <circle cx="410" cy="280" r="14" fill="#b65a18"/>
+</svg><text x="160" y="949" fill="#173f38" font-family="Arial,sans-serif" font-size="35.2">О клубе</text><text x="160" y="991" fill="#173f38" font-family="Arial,sans-serif" font-size="16">Мы исследуем город на велосипеде, выбираем спокойные маршруты и помогаем новичкам подготовиться к первой поездке.</text></svg>
