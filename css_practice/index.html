@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ВелоКруг — селекторы CSS</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>ВелоКруг</h1>
+        <p>Открой город с нового ракурса</p>
+        <nav aria-label="Основная навигация">
+          <ul>
+            <li><a href="#routes">Маршруты</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#about">О клубе</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container content">
+      <article class="post featured-post">
+        <h2 id="site-title">Первый маршрут</h2>
+        <p class="intro">Спокойная поездка помогает освоить город.</p>
+        <p>Начните с набережной и постепенно увеличивайте расстояние.</p>
+      </article>
+      <section class="examples" id="routes">
+        <h2>Подготовка</h2>
+        <div class="card">
+          <h3>Проверка велосипеда</h3>
+          <ul>
+            <li class="important">Тормоза</li>
+            <li>Давление в шинах</li>
+            <li class="important">Свет</li>
+            <li>Вода</li>
+          </ul>
+          <a href="#about" title="О клубе">Узнать о клубе</a>
+          <p>
+            <span class="inherit-demo">Пример явного наследования рамки</span>
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <h2>О клубе</h2>
+        <p>
+          Мы исследуем город на велосипеде, выбираем спокойные маршруты и
+          помогаем новичкам подготовиться к первой поездке.
+        </p>
+      </section>
+      <section id="schedule">
+        <h2>Расписание встреч</h2>
+        <table>
+          <caption>
+            Учебное расписание прогулок
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">День</th>
+              <th scope="col">Время</th>
+              <th scope="col">Маршрут</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Суббота</th>
+              <td>10:00</td>
+              <td>Набережная</td>
+            </tr>
+            <tr>
+              <th scope="row">Воскресенье</th>
+              <td>11:30</td>
+              <td>Зелёное кольцо</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <p>ВелоКруг · Учебный проект МДК 07</p>
+        <address>
+          <a href="mailto:club@example.com">club@example.com</a>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

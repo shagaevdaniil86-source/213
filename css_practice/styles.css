@@ -1,0 +1,296 @@
+body {
+  font:
+    1rem/1.65 system-ui,
+    sans-serif;
+  color: #193e39;
+  background: #f5f3eb;
+}
+header nav a {
+  color: #ffffff;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+p {
+  margin-bottom: 1rem;
+}
+a {
+  color: #12665c;
+  text-underline-offset: 4px;
+}
+button,
+.button {
+  display: inline-block;
+  background: #17685c;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:hover,
+.button:hover {
+  background: #104e46;
+}
+:focus-visible {
+  outline: 3px solid #b65a18;
+  outline-offset: 4px;
+}
+.container {
+  width: min(1120px, 100% - 2rem);
+  margin: auto;
+}
+header,
+footer {
+  padding: 2rem;
+  background: #173f38;
+  color: #fff;
+}
+header a,
+footer a {
+  color: inherit;
+}
+main {
+  padding: 2rem 0;
+}
+section {
+  margin-bottom: 2rem;
+}
+.card,
+aside,
+article {
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #d3dbd3;
+  border-radius: 10px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+  gap: 1.25rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+nav ul {
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #bacbc2;
+  padding: 0.7rem;
+  text-align: left;
+}
+caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+figure {
+  margin: 1.5rem 0;
+}
+figcaption {
+  font-size: 0.9rem;
+  color: #45635a;
+}
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #73958a;
+  border-radius: 5px;
+  background: white;
+}
+label {
+  display: block;
+  margin: 0.65rem 0 0.25rem;
+}
+fieldset {
+  padding: 1.25rem;
+  border: 1px solid #b0c6bd;
+  margin-bottom: 1.5rem;
+  min-width: 0;
+}
+legend {
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #edf3ec;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #193e39;
+}
+.error-message {
+  color: #a12520;
+  display: block;
+  min-height: 1.4em;
+  font-size: 0.9rem;
+}
+[aria-invalid="true"] {
+  border: 2px solid #a12520 !important;
+}
+.success-message {
+  background: #e0f0de;
+  padding: 1rem;
+}
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+@media (max-width: 480px) {
+  header,
+  footer {
+    padding: 1.25rem;
+  }
+  article,
+  .card {
+    padding: 1rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Тег, класс, ID, атрибут и четыре комбинатора. */
+h2 {
+  color: #385b46;
+}
+.post p {
+  color: #386d50;
+}
+.featured-post p {
+  color: #9a4518;
+}
+.featured-post .intro {
+  color: #5f376b;
+  font-size: 1.2rem;
+}
+#site-title {
+  text-align: left;
+}
+.content > article {
+  margin-bottom: 2rem;
+}
+h2 + p {
+  font-weight: 600;
+}
+h3 ~ ul {
+  margin-bottom: 1rem;
+}
+a[title] {
+  border-bottom: 2px solid currentColor;
+}
+/* 0,1,0; 0,1,1; 0,0,2. important показан только в учебном примере. */
+.important {
+  color: #bc4d13;
+}
+li.important {
+  color: #7b3210;
+}
+ul li {
+  color: #21583e;
+}
+.examples .important {
+  color: #92351f !important;
+}
+.card {
+  color: #21583e;
+  border-color: currentColor;
+}
+.inherit-demo {
+  border: inherit;
+  padding: 0.3rem;
+}
+.card li:nth-child(odd) {
+  background: #e5ede1;
+}
+.card li:hover {
+  background: #f2d7b8;
+}
+.post h2::after {
+  content: " ↗";
+  color: #b65a18;
+}
+.card h3::before {
+  content: "✓ ";
+  color: currentColor;
+}
+.intro::first-line {
+  font-weight: bold;
+}
+/* При равной специфичности более позднее правило побеждает. */
+.subtitle {
+  color: #dbe6d6;
+}
+.subtitle {
+  color: #f0d8b3;
+}
+.featured-post {
+  animation: appear 0.6s ease-out;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+:root {
+  --accent: #17685c;
+}
+button {
+  background: var(--accent);
+}
+@media (max-width: 600px) {
+  .content > article {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  th,
+  td {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+  }
+  table {
+    table-layout: fixed;
+  }
+}
