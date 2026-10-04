@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ПР11 — DOM</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container"><h1>Лаборатория DOM</h1></div>
+    </header>
+    <main class="container">
+      <section class="task-area">
+        <h2>1. Создание элементов</h2>
+        <div id="target1"></div>
+        <div class="toolbar"></div>
+      </section>
+      <section class="task-area">
+        <h2>2. Навигация по DOM</h2>
+        <div id="parent-element">
+          Родитель
+          <div class="child">Первый маршрут</div>
+          <div class="child">Второй маршрут</div>
+          <div class="child special">Набережная</div>
+        </div>
+        <div class="toolbar">
+          <button type="button" id="inspect-dom">Изучить дерево</button>
+        </div>
+        <pre id="dom-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>3. Классы и стили</h2>
+        <div id="style-target" class="card">Этот блок меняет оформление</div>
+        <div class="toolbar">
+          <button type="button" id="toggle-style">Переключить стиль</button><button type="button" id="change-header">Цвет шапки</button><button type="button" id="animate">Анимация</button>
+        </div>
+      </section>
+      <section class="task-area">
+        <h2>4. События</h2>
+        <label for="text-input">Введите заметку</label><input id="text-input" type="text">
+        <div class="toolbar">
+          <button type="button" id="click-btn">Счётчик кликов</button>
+        </div>
+        <pre id="click-counter" class="output" role="status">
+Ожидание действия</pre>
+        <pre id="input-display" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>5. Динамический список</h2>
+        <label for="item-input">Новый маршрут</label><input id="item-input" type="text">
+        <ul id="dynamic-list"></ul>
+        <div class="toolbar">
+          <button type="button" id="add-item">Добавить</button><button type="button" id="clear-list">Очистить</button>
+        </div>
+      </section>
+      <section class="task-area">
+        <h2>6. Форма</h2>
+        <form id="user-form" novalidate>
+          <label for="user-name">Имя</label><input id="user-name" name="name" required minlength="2" type="text"><label for="user-email">Email</label><input id="user-email" name="email" type="email" required><label for="user-age">Возраст</label><input id="user-age" name="age" type="number" required min="1" max="120"><button type="submit">Проверить</button>
+        </form>
+        <div class="toolbar"></div>
+        <pre id="form-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <button id="run-tests" type="button">Проверить функции</button>
+      <div id="testResults" role="status"></div>
+    </main>
+    <script src="dom-tasks.js" defer></script>
+    <script src="dom-tests.js" defer></script>
+  </body>
+</html>
