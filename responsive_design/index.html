@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ВелоКруг — адаптивная страница</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="#about">ВелоКруг</a>
+        <nav aria-label="Основная навигация">
+          <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+            Меню
+          </button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#routes">Маршруты</a></li>
+            <li><a href="#about">О клубе</a></li>
+            <li><a href="#schedule">Встречи</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero container">
+        <h1>Город ближе, чем кажется</h1>
+        <p>Присоединяйся к короткой прогулке в выходной.</p>
+        <a class="button" href="#routes">Выбрать маршрут</a>
+      </section>
+      <section class="container" id="routes">
+        <h2>Наши маршруты</h2>
+        <div class="features-grid">
+          <article class="card">
+            <h3>Набережная</h3>
+            <p>Ровная дорога вдоль реки: 12 км в спокойном темпе.</p>
+            <a href="#schedule">Посмотреть расписание</a>
+          </article>
+          <article class="card">
+            <h3>Зелёное кольцо</h3>
+            <p>Парковые дорожки и остановки для фотографий: 18 км.</p>
+            <a href="#schedule">Посмотреть расписание</a>
+          </article>
+          <article class="card">
+            <h3>Старый город</h3>
+            <p>Небольшие улицы, архитектура и кофе на финише: 9 км.</p>
+            <a href="#schedule">Посмотреть расписание</a>
+          </article>
+        </div>
+      </section>
+      <div class="container content">
+        <article class="main-content">
+          <h2>Первые 12 километров</h2>
+          <p>
+            Маршрут по набережной подходит для неспешного знакомства с городом.
+          </p>
+          <img src="images/bike.svg" width="800" height="400" class="responsive-img" alt="Велосипед на зелёном маршруте">
+        </article>
+        <aside class="sidebar">
+          <h2>Встречаемся у моста</h2>
+          <p>Проверьте тормоза перед выездом.</p>
+        </aside>
+      </div>
+      <div class="container">
+        <section id="about">
+          <h2>О клубе</h2>
+          <p>
+            Мы исследуем город на велосипеде, выбираем спокойные маршруты и
+            помогаем новичкам подготовиться к первой поездке.
+          </p>
+        </section>
+        <section id="schedule">
+          <h2>Расписание встреч</h2>
+          <table>
+            <caption>
+              Учебное расписание прогулок
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">День</th>
+                <th scope="col">Время</th>
+                <th scope="col">Маршрут</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Суббота</th>
+                <td>10:00</td>
+                <td>Набережная</td>
+              </tr>
+              <tr>
+                <th scope="row">Воскресенье</th>
+                <td>11:30</td>
+                <td>Зелёное кольцо</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <footer id="contact">
+      <div class="container">
+        <p>ВелоКруг · Учебный проект МДК 07</p>
+        <address>
+          <a href="mailto:club@example.com">club@example.com</a>
+        </address>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
