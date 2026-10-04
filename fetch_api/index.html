@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ПР14 — Fetch API</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Лаборатория HTTP</h1>
+        <p>
+          JSONPlaceholder — учебный API. Изменения моделируются и не сохраняются
+          на сервере. Для запросов требуется интернет.
+        </p>
+      </div>
+    </header>
+    <main class="container">
+      <section class="task-area">
+        <h2>1. GET</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-get">Получить пост</button><button type="button" id="fetch-json">Пользователи</button><button type="button" id="fetch-error">Ошибка</button>
+        </div>
+        <pre id="get-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>2. CRUD</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-post">POST</button><button type="button" id="fetch-put">PUT</button><button type="button" id="fetch-patch">PATCH</button><button type="button" id="fetch-delete">DELETE</button>
+        </div>
+        <pre id="crud-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>3. Заголовки и параметры</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-headers">Заголовки</button><button type="button" id="fetch-auth">Учебная авторизация</button><button type="button" id="fetch-params">Параметры</button><button type="button" id="fetch-timeout">Таймаут</button>
+        </div>
+        <pre id="headers-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>4. Ответы</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-status">HTTP статусы</button><button type="button" id="fetch-headers-response">
+            Заголовки ответа</button><button type="button" id="fetch-blob">Blob</button><button type="button" id="fetch-formdata">FormData</button>
+        </div>
+        <pre id="response-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>5. Ошибки и отмена</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-network-error">Сетевая ошибка</button><button type="button" id="fetch-http-error">HTTP ошибка</button><button type="button" id="fetch-abort">Запрос с отменой</button><button type="button" id="cancel-request">Отменить</button><button type="button" id="fetch-retry">Повторы GET</button>
+        </div>
+        <pre id="error-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>6. Параллельные запросы</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-all">Promise.all</button><button type="button" id="fetch-race">Promise.race</button><button type="button" id="fetch-sequential">Последовательные</button>
+        </div>
+        <pre id="parallel-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>7. Сценарии</h2>
+        <div class="toolbar">
+          <button type="button" id="fetch-user-posts">
+            Пользователь и посты</button><button type="button" id="fetch-search">Искать посты</button><button type="button" id="fetch-upload">
+            Загрузить учебный Blob</button><button type="button" id="fetch-cache">Кэш с TTL</button>
+        </div>
+        <pre id="scenario-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <label for="user-id">ID пользователя (1–10)</label><input id="user-id" type="number" min="1" max="10" value="1"><label for="search-input">Ключевое слово в постах</label><input id="search-input" value="qui" type="text"><label for="upload-progress">Прогресс отправки учебного файла</label><progress id="upload-progress" max="100" value="0"></progress>
+      <div id="get-data" class="data-container"></div>
+      <div id="response-data" class="data-container"></div>
+      <div id="scenario-data" class="data-container"></div>
+      <button id="run-tests" type="button">Запустить тесты</button>
+      <div id="testResults" role="status"></div>
+    </main>
+    <script src="fetch-tasks.js" defer></script>
+    <script src="fetch-tests.js" defer></script>
+  </body>
+</html>
