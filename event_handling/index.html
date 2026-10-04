@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ПР12 — события</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container"><h1>Лаборатория событий</h1></div>
+    </header>
+    <main class="container">
+      <section class="task-area">
+        <h2>1. Мышь</h2>
+        <div id="color-box" class="color-box">Наведи курсор</div>
+        <div class="toolbar">
+          <button type="button" id="basic-btn">Нажми меня</button>
+        </div>
+        <pre id="basic-output" class="output" role="status">
+Ожидание действия</pre>
+        <pre id="mouse-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>2. Клавиатура</h2>
+        <label for="key-input">Проверь Ctrl+S, Alt+C, Shift+A</label><input id="key-input" type="text">
+        <div class="toolbar"></div>
+        <pre id="key-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>3. Делегирование</h2>
+        <div id="item-list"></div>
+        <div class="toolbar">
+          <button type="button" id="add-item-btn">Добавить маршрут</button>
+        </div>
+        <pre id="delegation-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>4. Предотвращение поведения</h2>
+        <a href="https://example.com" id="prevent-link">Демонстрация отмены перехода</a>
+        <form id="prevent-form" novalidate>
+          <label for="message">Текст</label><input id="message" name="message" required type="text"><button type="submit">
+            Обработать локально
+          </button>
+        </form>
+        <div class="toolbar"></div>
+        <pre id="prevention-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>5. Кастомные события</h2>
+        <div class="toolbar">
+          <button type="button" id="trigger-custom">Запустить событие</button><button type="button" id="multiple-listeners">
+            Добавить три обработчика
+          </button>
+        </div>
+        <pre id="custom-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>6. Загрузка</h2>
+        <div id="image-container"></div>
+        <div class="toolbar">
+          <button type="button" id="load-image">Загрузить изображение</button><button type="button" id="load-error">Смоделировать ошибку</button>
+        </div>
+        <pre id="loading-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <section class="task-area">
+        <h2>7. Таймеры</h2>
+        <div class="toolbar">
+          <button type="button" id="start-timer">Старт</button><button type="button" id="stop-timer">Стоп и сброс</button><button type="button" id="debounce-btn">Debounce</button><button type="button" id="throttle-btn">Throttle</button>
+        </div>
+        <pre id="timer-output" class="output" role="status">
+Ожидание действия</pre>
+        <pre id="async-output" class="output" role="status">
+Ожидание действия</pre>
+      </section>
+      <button id="run-tests" type="button">Запустить проверки</button>
+      <div id="testResults" role="status"></div>
+    </main>
+    <script src="events-tasks.js" defer></script>
+    <script src="events-tests.js" defer></script>
+  </body>
+</html>
