@@ -1,0 +1,8 @@
+#lifecycle-output pre {
+  max-height: 300px;
+  overflow: auto;
+}
+#lifecycle-output output {
+  font-size: 2rem;
+  font-variant-numeric: tabular-nums;
+}

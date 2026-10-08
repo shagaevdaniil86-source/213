@@ -1,0 +1,15 @@
+#hooks-output-1 output {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+[data-theme="dark"] {
+  --bg: #152922;
+  --surface: #203b32;
+  --text: #edf5ed;
+  --border: #668e7e;
+  --accent: #8bd1b3;
+  --button-text: #152922;
+  --secondary: #aac8bb;
+  color-scheme: dark;
+}

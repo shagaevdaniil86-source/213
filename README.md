@@ -22,3 +22,4 @@
 | ПР12 — обработка событий          | [event_handling](event_handling)               |
 | ПР13 — асинхронные операции       | [async_operations](async_operations)           |
 | ПР14 — Fetch API                  | [fetch_api](fetch_api)                         |
+| ПР15 — React: компоненты и hooks  | [react-components](react-components)           |
