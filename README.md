@@ -23,3 +23,5 @@
 | ПР13 — асинхронные операции       | [async_operations](async_operations)           |
 | ПР14 — Fetch API                  | [fetch_api](fetch_api)                         |
 | ПР15 — React: компоненты и hooks  | [react-components](react-components)           |
+| ПР16 — React: использование хуков | [react-hooks-practice](react-hooks-practice)   |
+| ПР17 — React: работа с формами    | [react-forms-practice](react-forms-practice)   |
